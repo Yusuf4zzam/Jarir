@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+body {
+  font-family: "Alexandria", sans-serif;
+  font-size: 14px;
+}
+
+p,
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder, button::-moz-placeholder {
+  font-size: 12px;
+}
+input::placeholder,
+select::placeholder,
+textarea::placeholder,
+button::placeholder {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+
+header * {
+  white-space: nowrap;
+}
+header li:hover .nested-list {
+  display: block !important;
+}
+header li .nested-list a {
+  transition: 0.3s;
+}
+header li .nested-list a:hover {
+  background: #eee;
+  font-weight: bold;
+  padding-right: 20px !important;
+}
+@media (max-width: 1400px) {
+  header p,
+  header ul {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 1200px) {
+  header p,
+  header ul {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 991px) {
+  header p,
+  header ul {
+    border: 0 !important;
+  }
+}
+
+.swiper-button-disabled {
+  display: none !important;
+}
+
+aside .link a {
+  transition: 0.3s;
+}
+aside .link a:hover {
+  background: #f1f1f1 !important;
+  font-weight: 600;
+}
+
+.scroll-to-top.flow {
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.scroll-to-top.flow.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.products .card-box .discount::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  background: #f00;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+footer .row li a {
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.3s;
+}
+footer .row li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+}
+@media (max-width: 500px) {
+  .copyright {
+    font-size: 10px !important;
+  }
+}/*# sourceMappingURL=main.css.map */
